@@ -1,0 +1,17 @@
+package exerciciosAula2;
+
+import javax.swing.JOptionPane;
+
+public class exercicio_04 {
+
+	public static void main(String[] args) {
+		// Faça um programa que receba o salário de um funcionário, calcule e mostre o novo salário, sabendo-se que este sofreu um aumento de 25%.
+		double salario,novoSalario;
+		salario = Double.valueOf(JOptionPane.showInputDialog("Insira seu salário: ")); 
+	
+		novoSalario = (salario * 0.25)+ salario;
+		
+		JOptionPane.showMessageDialog(null,"Seu salario com aumento de 25% é: " + novoSalario);
+	}
+
+}
